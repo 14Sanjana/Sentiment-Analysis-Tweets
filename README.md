@@ -14,3 +14,6 @@ Enter Tweet index(from datset): 0
 Predicted output : My whole body feels itchy and like its on fire
 Prediction : negative 😞
 confidence : 51.24%
+
+![Screenshot 2025-04-06 212737](https://github.com/user-attachments/assets/c0b14513-b773-437d-8d28-42cba98a8552)
+
