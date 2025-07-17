@@ -77,11 +77,17 @@ Confidence: 51.24%
 ![Screenshot 2025-04-06 212737](https://github.com/user-attachments/assets/c0b14513-b773-437d-8d28-42cba98a8552)
 
 ⚙️ How to Run
+---
 1.Clone the repository
 git clone https://github.com/yourusername/tweet-sentiment-analysis.git
 cd tweet-sentiment-analysis
+---
+---
 2.Install dependencies
 pip install -r requirements.txt
+---
+---
 3.Run the notebook
 Open Sentiment_analysis_tweets.ipynb in Jupyter Notebook or Google Colab
+---
 
