@@ -1,57 +1,69 @@
-Tweet Sentiment Analysis using ML & DL
-This project focuses on analyzing the sentiment of tweets using Machine Learning (Logistic Regression) and Deep Learning (LSTM). It includes the full pipeline: text cleaning, feature extraction (TF-IDF), model training, evaluation, and prediction.
+# 💬 Tweet Sentiment Analysis using **NLP**
 
-The goal is to classify tweets into:
+This project focuses on analyzing the **sentiment of tweets** using both **Logistic Regression** and **LSTM** techniques. It includes the full pipeline from text preprocessing to model evaluation and prediction.
 
-Positive 😄
+---
 
-Negative 😞
+## 🎯 Objective
 
-Neutral 😐 (if applicable in extended dataset)
+Classify tweets into one of the following sentiments:
 
-🧠 Technologies Used
-Languages: Python
+- 😄 **Positive**
+- 😞 **Negative**
+- 😐 **Neutral** *(if applicable in extended dataset)*
 
-Libraries:
+---
 
-Pandas, NumPy – Data manipulation
+## 🧠 Technologies Used
 
-NLTK, re – Text preprocessing
+### 📝 **Languages**
+- Python
 
-Scikit-learn – TF-IDF, Logistic Regression
+### 📚 **Libraries**
+- `Pandas`, `NumPy` – Data manipulation  
+- `NLTK`, `re` – Text preprocessing  
+- `Scikit-learn` – TF-IDF, Logistic Regression  
+- `TensorFlow`, `Keras` – LSTM model  
 
-TensorFlow, Keras – LSTM model
+---
 
-Matplotlib, Seaborn – Data visualization
+## 📦 Dataset
 
-Steps in the Project
-Dataset Import:
+- **Source:** Kaggle Twitter Sentiment Dataset  
+- Loaded using Pandas for processing and analysis.
 
-Twitter Sentiment dataset imported from Kaggle.
+---
 
-Text Preprocessing:
+## 🔄 Project Pipeline
 
-Lowercasing, removing punctuation, stopwords, URLs, hashtags, etc.
+### 📥 1. Dataset Import
+- Load Twitter sentiment data from a CSV file.
 
-Feature Engineering:
+### 🧹 2. Text Preprocessing
+- Lowercase text  
+- Remove URLs, hashtags, mentions, stopwords, punctuation, etc.
 
-Using TF-IDF vectorizer to convert text to numeric features.
+### 🧪 3. Feature Engineering
+- Convert cleaned text into numerical vectors using **TF-IDF Vectorizer**
 
-Model Building:
+### 🧠 4. Model Building
+- **Logistic Regression** (ML approach)  
+- **LSTM** (DL approach using TensorFlow/Keras)
 
-Logistic Regression for baseline classification.
+### 📊 5. Model Evaluation
+- Accuracy Score  
+- Confusion Matrix  
+- Classification Report
 
-LSTM model using TensorFlow/Keras for deep learning approach.
+### 🤖 6. Prediction System
+- Input: Tweet index or custom tweet  
+- Output: Sentiment label + Confidence Score
 
-Model Evaluation:
+---
 
-Accuracy, Confusion Matrix, Classification Report, etc.
+## 🧾 Output Format
 
-Prediction System:
-
-Takes user input as tweet index or text and returns sentiment + confidence.
-
-🧾 Output Format
+```text
 Input Tweet: "I love the new features in this update!"
 Predicted Sentiment: Positive 😄
 Confidence: 91.24%
@@ -61,13 +73,15 @@ Tweet: "My whole body feels itchy and like it’s on fire"
 Prediction: Negative 😞
 Confidence: 51.24%
 
-
+```
 ![Screenshot 2025-04-06 212737](https://github.com/user-attachments/assets/c0b14513-b773-437d-8d28-42cba98a8552)
 
-📌 How to Run
-Clone the repository
-
-Install dependencies from requirements.txt
-
-Run Sentiment_analysis_tweets.ipynb in Jupyter or Colab
+⚙️ How to Run
+1.Clone the repository
+git clone https://github.com/yourusername/tweet-sentiment-analysis.git
+cd tweet-sentiment-analysis
+2.Install dependencies
+pip install -r requirements.txt
+3.Run the notebook
+Open Sentiment_analysis_tweets.ipynb in Jupyter Notebook or Google Colab
 
